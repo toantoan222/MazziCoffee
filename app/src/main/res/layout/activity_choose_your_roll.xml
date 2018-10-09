@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".ChooseYourRoll"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/adminb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/button_statement"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Quản lý"
+        android:textColor="#dfdfdf"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/waiterb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/waiterb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/button_statement"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Phục vụ"
+        android:textColor="#dfdfdf"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bartenderb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminb" />
+
+    <Button
+        android:id="@+id/bartenderb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_statement"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Pha chế"
+        android:textColor="#dfdfdf"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/cashierb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waiterb" />
+
+    <Button
+        android:id="@+id/cashierb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/button_statement"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Thu ngân"
+        android:textColor="#dfdfdf"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/storageb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bartenderb" />
+
+    <Button
+        android:id="@+id/storageb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/button_statement"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Quản kho"
+        android:textColor="#dfdfdf"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cashierb" />
+</android.support.constraint.ConstraintLayout>

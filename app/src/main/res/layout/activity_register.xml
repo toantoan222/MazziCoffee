@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/register"
+        app:layout_constraintBottom_toTopOf="@+id/UNresbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/UNresbox"
+        android:layout_width="314dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/box"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Username"
+        android:paddingLeft="10dp"
+        android:textColor="#dfdfdf"
+        android:textColorHint="#8c8c8c"
+        app:layout_constraintBottom_toTopOf="@+id/PWresbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/PWresbox"
+        android:layout_width="314dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/box"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="#dfdfdf"
+        android:textColorHint="#8c8c8c"
+        app:layout_constraintBottom_toTopOf="@+id/resbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UNresbox" />
+
+    <Button
+        android:id="@+id/resbutton"
+        android:layout_width="314dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="89dp"
+        android:background="@drawable/button_statement"
+        android:fontFamily="sans-serif-condensed"
+        android:text="REGISTER"
+        android:textColor="#dfdfdf"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PWresbox" />
+
+
+</android.support.constraint.ConstraintLayout>
